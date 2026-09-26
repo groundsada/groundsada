@@ -1,27 +1,32 @@
-# Mohammad Firas Sada
+```python
+from dataclasses import dataclass
+from typing import Tuple
 
-**Research Networking Systems Software Engineer | HPC &amp; AI/ML | FPGA | Cloud &amp; DevOps**
+class Meta(type):
+    def __new__(cls, name, bases, attrs):
+        new_cls = super().__new__(cls, name, bases, attrs)
+        return dataclass(unsafe_hash=True, frozen=True)(new_cls)
 
-<div align="center">
-<pre style="background:#17141d;border:1px solid #8b82a8;border-radius:10px;padding:18px 24px;font-family:Menlo,Consolas,monospace;font-size:13.5px;line-height:1.65;color:#e8e8f0;display:inline-block;text-align:left;margin:8px 0;">
-<span style="color:#4ade80">$</span> <span style="color:#29d9ff">whatis</span> <span style="color:#ff8a3d">firas</span>                
-<span style="color:#8b82a8">firas (1) - research networking systems software engineer</span>
+class Bio(metaclass=Meta):
+    name        : str = "Mohammad Firas Sada"
+    designation : str = "Research Networking Systems Software Engineer"
+    focus       : str = "HPC & AI/ML | FPGA | Cloud & DevOps"
+    employer    : str = "ESnet (LBNL)"
+    base        : str = "remote (always)"
 
-<span style="color:#4ade80">$</span> <span style="color:#29d9ff">man</span> <span style="color:#ff8a3d">firas</span> | head -12                            
+class Stack(metaclass=Meta):
+    languages   : Tuple[str, ...] = ("Bash", "Python", "C", "P4")
+    platforms   : Tuple[str, ...] = ("Kubernetes", "NRP", "SENSE")
+    network     : Tuple[str, ...] = ("eBPF", "sFlow", "segment routing", "SmartNICs")
+    hardware    : Tuple[str, ...] = ("FPGA", "Qualcomm Cloud AI 100")
 
-<span style="color:#ff2d95;font-weight:bold">NAME</span>
-     firas - moves science data, programs networks, measures things
-
-<span style="color:#ff2d95;font-weight:bold">SYNOPSIS</span>
-     firas [--remote] [--esnet] [--sdsc] [--fpga]
-
-<span style="color:#ff2d95;font-weight:bold">DESCRIPTION</span>
-     the work is science data movement and programmable networks
-     SENSE orchestration, transfer tooling, k8s substrate, and
-     the plumbing between the tools researchers actually use
-</pre>
-
-</div>
+class Social(metaclass=Meta):
+    site        : str = "groundsada.github.io"
+    blog        : str = "groundsada.github.io/blog"
+    github      : str = "groundsada"
+    linkedin    : str = "msada"
+    instagram   : str = "firas_sada"
+```
 
 <p>
 <a href="https://groundsada.github.io"><img src="btn-site.svg" alt="site" /></a>
