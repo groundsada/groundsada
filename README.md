@@ -5,7 +5,7 @@
 <p align="center"><a href="https://groundsada.github.io"><b>site</b></a> &nbsp;&middot;&nbsp; <a href="https://groundsada.github.io/blog"><b>blog</b></a> &nbsp;&middot;&nbsp; <a href="https://www.linkedin.com/in/msada"><b>linkedin</b></a> &nbsp;&middot;&nbsp; <a href="https://www.instagram.com/firas_sada/"><b>instagram</b></a></p>
 
 <div align="center">
-  <div style="display:inline-block;text-align:left;background:#17141d;border:1px solid #ff2d95;border-radius:12px;padding:16px 22px;font-family:'SF Mono',Menlo,Consolas,monospace;font-size:14px;line-height:1.6;color:#e8e8f0;">
+  <div style="display:inline-block;text-align:left;background:#17141d;border:2px solid #ff2d95;border-radius:12px;padding:16px 22px;font-family:'SF Mono',Menlo,Consolas,monospace;font-size:14px;line-height:1.6;color:#e8e8f0;">
   <span style="color:#29d9ff">firas@groundsada</span><span style="color:#8b82a8"> $ ls</span><br>
   about.md&nbsp;&nbsp;projects/&nbsp;&nbsp;papers/&nbsp;&nbsp;<span style="color:#ff8a3d">rabbit.exe</span><br>
   <span style="color:#29d9ff">firas@groundsada</span><span style="color:#8b82a8"> $ cat rabbit.exe</span><br>
